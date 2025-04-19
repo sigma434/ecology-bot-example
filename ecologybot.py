@@ -5,7 +5,7 @@ from telebot.handler_backends import ContinueHandling
 from telebot import types
 
 
-bot = telebot.TeleBot("7817058953:AAHHfuRIcY7Og5kCFj2EclAkiaQFYsflhS4")
+bot = telebot.TeleBot("YOUR TOKEN")
 
 
 bot.set_my_commands(
