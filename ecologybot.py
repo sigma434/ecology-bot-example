@@ -12,8 +12,18 @@ bot.set_my_commands(
     commands=[
         telebot.types.BotCommand("text", "sending you a text about ecology"),
         telebot.types.BotCommand("start","greets you"),
+        telebot.types.BotCommand("help","sends you a command list"),
+        telebot.types.BotCommand("subotnik"," sends you site with dates")
         ])
 
+
+@bot.message_handler(commands=["help"])
+def help(message):
+    bot.send_message(message.chat.id, "В боте есть следующие команды : /start и /text и /subotnik")
+
+@bot.message_handler(commands=["subotnik"])
+def subotnik(message):
+    bot.send_message(message.chat.id, "Даты с суботниками в москве: https://www.mos.ru/mayor/themes/12531050/")
 
 @bot.message_handler(commands=["start"])
 def start(message):
@@ -27,3 +37,5 @@ def text(message):
     bot.send_message(message.chat.id , f )
     text.close()
  
+
+bot.infinity_polling()
