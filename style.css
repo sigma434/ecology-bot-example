@@ -1,0 +1,53 @@
+body{
+    margin: 0%;
+    font-size: 15px;
+    font-family: Geneva, Arial, Helvetica, sans-serif;
+    max-width: 1000px;
+    min-width: 500px;
+    background-color: rgba(142, 92, 188, 0);
+    color: rgb(184, 90, 224);
+}
+
+@keyframes color-change {
+    0% {
+      color: rgb(11, 97, 210);
+    }
+
+    25%{
+        color: rgb(0, 183, 255);
+    }
+  
+    50% {
+      color: rgb(9, 169, 148);
+    }
+
+    75%{
+        color: rgb(0, 255, 195);
+    }
+  
+    100% {
+      color: rgb(0, 191, 255);
+    }
+}
+
+
+h1{
+    animation: color-change 5s infinite;
+}
+h2{
+    color: black;
+    margin: 0%;
+}
+h3{
+    color:black;
+    font-size: large;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+iframe{
+    width:1000px ;
+}
+img{
+    width: 1250px;
+    height: 650px;
+    margin: 0cm;
+}
